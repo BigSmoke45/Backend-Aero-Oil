@@ -9,7 +9,7 @@ app.use(cors());
 
 // проверка
 app.get("/", (req, res) => {
-  res.send("Сервер работает 🚀");
+  res.send("Aero-Oil API is running");
 });
 
 // баланс TON
@@ -39,5 +39,5 @@ app.get("/balance/:address", async (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`🔥 Server started on port ${PORT}`);
+  console.log(`Server started on port ${PORT}`);
 });
